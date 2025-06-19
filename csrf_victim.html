@@ -1,0 +1,19 @@
+<!-- victim.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Victim Site</title></head>
+<body>
+    <h1>Добро пожаловать, Пользователь!</h1>
+
+    <!-- Представим, что пользователь авторизован через куки или сессию -->
+
+    <h2>Изменить email:</h2>
+    <!-- <form action="http://localhost/csrf_change-email.php"  method="POST"> -->
+    <form action="http://localhost/fix_csrf_change-email.php"  method="POST">
+        <input type="email" name="email" placeholder="Новый email">
+        <button type="submit">Сохранить</button>
+    </form>
+</body>
+</html>
